@@ -1,5 +1,12 @@
 ### Docker/Docker Compose/Dockerize using Nginx + HTTPS on localhost / Windows
 
+![Example](https://raw.githubusercontent.com/marcelogarbin/docker-nginx-https/master/assets/screen-chrome.jpg)
+
+
+##### Currently working in browser:
+- Google Chrome
+
+
 ##### Tools:
 - [Docker](https://www.docker.com/)
 - [docker-compose](https://docs.docker.com/compose/)
