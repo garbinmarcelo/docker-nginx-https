@@ -15,4 +15,17 @@ The generated certificate will be located in the **./docker/certs** folder.
 - Put all certificates in the following repository: **Trusted Root Certification Authorities**;
 
 
+So now you can locally access your project with ssl enabled: https://examplehttps.test/
+
+
+To change the domain and generate a new certificate, change in `docker-compose.yml`
+
+
+```
+environment:
+   - URL_DOMAIN=yourdomain.test
+```
+
+do the build (`$ docker-compose up -d --build`) again, install the certificate and that's all...
+
 Note: This is an environment for local studies and development, use in production is not recommended. Improvements are very welcome!
