@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  nginx:
+    build:
+      context: ./.docker/nginx
+      dockerfile: Dockerfile
+    container_name: nginx
+    environment:
+      - URL_DOMAIN=examplehttps.test
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./.docker/nginx:/var/www/.docker/nginx
+      - ./html:/var/www/html
+      - ./.docker/certs:/certs
