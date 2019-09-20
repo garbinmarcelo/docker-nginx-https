@@ -6,7 +6,7 @@
 - [Dockerize](https://github.com/jwilder/dockerize)
 
 
-**Run:** `$ docker-compose up -d`
+**Run:** `$ docker-compose up -d --build`
 
 The generated certificate will be located in the **./docker/certs** folder.
 - Run the file with extension .crt | Ex.: *examplehttps.test-selfsigned.crt*
